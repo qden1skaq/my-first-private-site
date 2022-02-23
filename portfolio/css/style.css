@@ -1,0 +1,222 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Gilruy-Bold';
+    src: url('../fonts/Gilroy-Bold.woff') format('woff2'),
+    url('../fonts/Gilroy-Bold.ttf')  format('truetype'),
+    url('../fonts/Gilroy-Bold.woff2') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilruy-Medium';
+    src: url('../fonts/Gilroy-Medium.woff') format('woff2'),
+    url('../fonts/Gilroy-Medium.ttf')  format('truetype'),
+    url('../fonts/Gilroy-Medium.woff2') format('woff');
+    font-weight: 500;
+    font-style: normal;
+
+}
+body {
+    font-family: Gilruy-Bold, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    text-align: center;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.container {
+    max-width: 970px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.header {
+    height: 100vh;
+}
+.text {
+    font-family: Gilruy-Medium, sans-serif;
+    font-weight: 500;
+}
+.portfolio__images {
+    width: 100%;
+}
+.menu__list {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 33px;
+    padding-bottom: 31px;
+}
+.menu__link {
+    color: #828282;
+    transition: all 0.3s;
+}
+.menu__link:hover {
+    color: #070707;
+
+}
+.menu {
+    border-bottom: 1px solid #828282;
+}
+.header__content {
+    /*padding-top: 100px ;*/
+}
+.header__info {
+    display: flex;
+    justify-content: space-between;
+}
+.header__title {
+    font-size: 47px;
+    line-height: 59px;
+    color: #070707;
+    padding-top: 40px;
+    text-align: left;
+}
+.header__text {
+    padding-top: 108px;
+    font-family: Gilruy-Medium, sans-serif;
+    font-weight: 500;
+}
+.header__content-box {
+    transform: rotate(-90deg);
+    padding-top: 90px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+}
+.header__content-link {
+    color: #070707;
+}
+.header__content-link--active {
+    color: #828282;
+}
+.header__images {
+    padding-top: 50px;
+}
+.header__images-bg {
+    width: 100%;
+}
+.arrow__down {
+    width: 10%;
+}
+.header__arrow {
+    animation: arrowDown 2s infinite;
+}
+@keyframes arrowDown {
+    0% {
+        padding-top: 55px;
+        opacity: 0;
+    }
+    35% {
+        opacity: 1;
+    }
+    100% {
+        padding-top: 90px;
+        opacity: 0;
+    }
+}
+.about {
+    background: #F6F6F6;
+    height: 506px;
+    margin-bottom: 90px;
+}
+.about__inner {
+    padding-top: 100px;
+}
+.title {
+    font-size: 34px;
+    line-height: 42px;
+}
+.about__title {
+    padding-bottom: 18px;
+}
+.about__text {
+    padding-top: 20px;
+}
+.about__text-info {
+    padding-bottom: 50px;
+}
+.skills__inner {
+    margin-bottom: 90px;
+}
+.skills__text {
+    padding-top: 40px;
+}
+.skills__info {
+    margin-bottom: 55px;
+}
+.skills__box {
+    display: flex;
+    justify-content: space-between;
+}
+.skills__box-info {
+    gap: 30px;
+}
+.skills__box-title {
+    padding-top: 25px;
+    padding-bottom: 35px;
+    color: #828282;
+}
+.portfolio {
+    height: 2300px;
+    background: #F6F6F6;
+}
+.portfolio__title {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.portfolio__text {
+    text-decoration: underline;
+}
+.portfolio__fashion-img {
+    margin-bottom: 45px;
+}
+.portfolio__reebok-img {
+    padding-top: 100px;
+    margin-bottom: 45px
+}
+.portfolio__braun-img {
+    padding-top: 100px;
+    margin-bottom: 45px;
+}
+.footer__inner {
+    padding-top: 100px;
+    margin-bottom: 125px;
+}
+.contacts__btn {
+    padding: 13px 35px;
+    background-color: #000000;
+    color: #fff;
+    border-radius: 30px;
+    max-width: 180px;
+
+}
+.contacts__title {
+    padding-bottom: 20px;
+}
+.contacts__text {
+    font-family: Gilruy-Medium, sans-serif;
+    font-weight: 500;
+    padding-bottom: 50px;
+}
+.footer__social-link + .footer__social-link {
+    padding-left: 60px ;
+}
+.footer__social {
+    padding-top: 85px;
+}
+.footer__social-text {
+    margin-top: 45px;
+    color: #828282;
+    font-family: Gilruy-Medium, sans-serif;
+    font-weight: 500;
+}
